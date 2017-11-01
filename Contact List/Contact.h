@@ -10,6 +10,7 @@
 
 @interface Contact : NSObject
 
+// Defines the properties of a Contact. Every contact will have a name and an email
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* email;
 

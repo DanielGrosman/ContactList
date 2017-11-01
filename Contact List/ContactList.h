@@ -10,9 +10,12 @@
 #import "Contact.h"
 @interface ContactList : NSObject
 
+// Defines a mutable array names contactList (items in the array to be added later)
 @property (nonatomic, strong) NSMutableArray* contactList;
 
+
 - (void) addContact:(Contact*)newContact;
+
 - (void) printContacts;
 
 @end

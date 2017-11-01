@@ -10,7 +10,7 @@
 
 @interface InputCollector : NSObject
 
-// The first method outputs an NSString, and takes in an NSString called promptString
+// The first method outputs an NSString, and takes in an NSString called promptString. That means that when this method is invoked, a string will have to be provided as input using the method:string syntax. Whatever string is passed in will then become promtString
 - (NSString *)inputForPrompt:(NSString *)promptString;
 
 // These 2 methods output NSStrings

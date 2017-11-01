@@ -10,6 +10,7 @@
 
 @implementation InputCollector
 
+// Prints out the promptString, which is whatever string is passed to this method when it is invoked. and then fgets the option chosen from the user (converts it to Objective C string and parses it)
 - (NSString *)inputForPrompt:(NSString *)promptString; {
     NSLog(@"%@", promptString);
     char userInput[20];
@@ -19,7 +20,7 @@
     return parsedInput;
 }
 
-
+// when called, fgets a name from the user
 - (NSString *)contactName {
     char name[20];
     NSLog(@"\nContact Name: \n");
@@ -29,6 +30,7 @@
     return parsedUserName;
 }
 
+// when called, fgets an email from the user
 - (NSString *)contactEmail {
     char email[50];
     NSLog(@"\nContact Email: \n");
