@@ -10,7 +10,10 @@
 
 @interface InputCollector : NSObject
 
+// The first method outputs an NSString, and takes in an NSString called promptString
 - (NSString *)inputForPrompt:(NSString *)promptString;
+
+// These 2 methods output NSStrings
 - (NSString *)contactName;
 - (NSString *)contactEmail;
 
